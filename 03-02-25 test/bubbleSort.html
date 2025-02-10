@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbleSort</title>
+</head>
+<body>
+    
+    <!--
+     perform buble sort algorithm for 
+     [6,4,7,3,6,2,5,1]  using while 
+    -->
+
+<script>
+
+let arr=[6,4,7,3,6,2,5,1];
+let len=arr.length
+while(len>=0){
+    let p1=0;
+    let p2=1;
+
+    for(let i=0;i<=len-2;i++){
+        if(arr[p1]>arr[p2]){
+            let temp=arr[p1]
+            arr[p1]=arr[p2]
+            arr[p2]=temp
+        }
+        p1++;
+        p2++;
+    }
+len--
+}
+console.log(arr);
+
+</script>
+
+</body>
+</html>

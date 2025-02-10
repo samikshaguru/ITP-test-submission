@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hollow square</title>
+</head>
+<body>
+    <!-- 
+
+    7 7 7 7 7 7 7
+    7 7       7 7
+    7 7       7 7
+    7 7       7 7
+    7 7       7 7 
+    7 7       7 7
+    7 7 7 7 7 7 7
+
+ -->
+
+<script>
+
+for(let i=1;i<=7;i++){
+    let bag="";
+    for(let j=1;j<=7;j++){
+        if(i==1 || i==7 || j==1 || j==2 || j==6 || j==7){
+            bag = bag + " 7 "
+        }else{
+            bag=bag + "   ";
+        }
+    }
+    console.log(bag);
+}
+
+</script>
+
+</body>
+</html>
