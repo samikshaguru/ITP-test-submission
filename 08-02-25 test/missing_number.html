@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test DSA</title>
+</head>
+<body>
+    
+    <script>
+        
+        // Find the Missing Number in an Array
+// Given an array containing n-1 unique numbers from 1 to n (one number is missing), find the
+// missing number efficiently. Example
+// Input: [1, 2, 4, 6, 3, 7, 8]
+// Output: 5
+
+let arr=[1,2,3,4,6,7,8]; // array of consecutive number 
+
+let n=arr.length+1; // missing 1 number '+1'
+let totalSum=(n*(n+1))/2; // total sum of consecutive no
+
+console.log("total sum of array="+totalSum)
+
+let presentSum=0;
+
+for(let i=0;i<arr.length;i++){
+    presentSum +=arr[i];
+
+    console.log(presentSum)
+}
+let missing_number=totalSum-presentSum;
+
+console.log(`missing number in an array is ${missing_number}`);
+
+ </script>
+  
+</body>
+</html>

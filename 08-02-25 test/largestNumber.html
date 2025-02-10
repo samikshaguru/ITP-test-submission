@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest_number</title>
+</head>
+<body>
+    <!-- Find the Largest and Second Largest Number in a List
+Write a program that finds both the largest and second-largest numbers in a list without
+using sort(). Example:
+Input: [10, 20, 4, 45, 99]
+Output: Largest = 99, Second Largest =45 -->
+
+
+<script>
+
+ let array=[10, 20, 4, 45, 99];
+
+ let max = array[0];
+ let secondMax=array[1];
+
+ for(let i=0;i<array.length;i++){
+
+    if(secondMax > array[i]){
+      max=secondMax;
+      secondMax=array[i];
+
+    }else if(array[i] > secondMax ){
+
+      secondMax=max
+
+     max=array[i];
+    }
+ }
+
+ console.log(`largest number = ${max} && second Largest number = ${secondMax}`)
+
+
+
+</script>
+
+</body>
+</html>
